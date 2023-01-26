@@ -6,8 +6,7 @@
 \usepackage[a4paper,margin=2.5cm]{geometry}
 
 \usepackage{graphicx}
-\usepackage{pdflscape, tabularx, ragged2e, float, array, tabto, longtable}
-\TabPositions{0em, 20em}
+\usepackage{amsmath, pdflscape, ragged2e, float, array, tabto, longtable, multicol}
 \newcolumntype{L}{>{\RaggedRight\arraybackslash}X}
 %\usepackage[colorlinks=true, allcolors=blue]{hyperref}
 \usepackage{hyperref}
@@ -46,10 +45,83 @@
 
         Výše je však kromě obsahu také obsah seřazený podle maturitních otázek - doporučuji proto elekronickou podobu, která umožňuje mezi tématy skákat přes hyperlinky a výrazně tak zjednodušuje orientaci v materiálu.
     \newpage
+    
+\setlength{\parindent}{0px}
+\section{Atom}
+\subsection{Erwin Schrödinger}
+Rakouský fyzik (1889 - 1961)
 
+Definoval \underline{ORBIT = ORBITAL} jako místo s 96\% pravděpodobností výskytu $e^-$
+
+Matematicky vyjádřil vlnovou funkci $\Psi$ (psí)
+
+Nositel Nobelovy ceny za fyziku 1933
+
+\TabPositions{0em, 12em, 25em}
+\subsection{Kvantová čísla}
+    \begin{description}
+        \item[hlavní \textbf{n}] \tab 1-$\infty$(zatím 7) \tab udává \underline{energii} orbitu
+        \item[vedlejší \textbf{l}] \tab 0-(n-1) \tab udává \underline{tvar} orbitu
+        \item[magnetické \textbf{m}] \tab -l...0...+l \tab udává \underline{počet orbitalů} a jejich orientaci
+        \item[spinové \textbf{s}] \tab $-\frac{1}{2}$ - $\frac{1}{2}$ \tab udává \underline{spin} $e^-$
+    \end{description}
+
+\centering
+\subsubsection{Slupky, energetické hladiny (dráhy)}
+    \begin{multicols}{2}
+        $n = 1 \to K$
+
+        $n = 2 \to L$
+        
+        $\vdots$
+        
+        $n = 3 \to M$
+        
+        $n = 4 \to N$
+
+        $\vdots$ 
+    \end{multicols}
+
+\centering
+\subsubsection{Podslupky}
+    \begin{multicols}{2}
+        $l = 0 \to s$
+
+        $l = 1 \to p$
+        
+        $l = 2 \to d$
+        
+        $l = 3 \to f$
+    \end{multicols}
+
+
+\subsubsection{Tvary orbitů}
+    \vspace{2em}
+    \raggedright
+    \TabPositions{0em, 20em}
+    $l = 0 \to$ tvar orbitu \textbf{s}: kulově symetrický
+    \tab
+    $\overbrace{\underbrace{1s}_{\cdot}}^{\text{\tiny{hlavní kv. \#, vedlejší \#}}}  \underbrace{2s}_{\circ} \hspace{3em} \underbrace{3s}_{\bigcirc}$
+    
+    \vspace{2em}
+    \raggedright
+    $l = 1 \to $ tvar orbitu \textbf{p}: "ležatá osmička" \tab \hspace{2em} \huge{$\infty$}
+
+    \normalsize
+    
+    $l = 2 \to $ tvar orbitu \textbf{d}: "čtyřlístek"
+    
+    \vspace{2em}
+
+    $l = 3 \to $ tvar orbitu \textbf{f}: "velmi složitý tvar"
+
+
+\raggedright
+
+\newpage
+\TabPositions{0em, 20em}
 \section{Prvky}
 \subsection{1. Hlavní podskupina - Alkalické kovy (tvoří hydroxidy)}
-\setlength{\parindent}{0px}
 \textbf{H, Li, Na, K, Rb, Cs, Fr} (radioaktivní, 1940)
 
 \textit{"Helenu Líbal Na Kolena Robot Cecil Franc"}
@@ -188,12 +260,12 @@
             \newline s $O_2 \,\to\,$ PEROXIDY: \tab $Ba + O_2 \,\to\, BaO_2$ (peroxid barnatý!)
         \item s $N_2 \,\to\,$ NITRIDY: \tab $3Sr + N_2 \,\to\, Sr_3 N_2$
         \item s $\WATER \,\to\,$ HYDROXIDY: \tab $Ca+2\WATER \,\to\, Ca \left( OH \right) _2 + H_2$ (exotermická reakce)
-            \newline \tab\tab $Ba + 2\WATER \,\to\, \underbrace{Ba \left( OH \right) _2}_{barytov\acute{a}\,voda} + H_2$ 
+            \newline \tab\tab $Ba + 2\WATER \,\to\, \underbrace{Ba \left( OH \right) _2}_\text{barytová voda} + H_2$ 
     \end{enumerate}
     Sloučeniny Ca (stavebnictví)
-    \[\underbrace{CaCO_3}_{v\acute{a}penec} \,\overrightarrow{\, _{800^\circ C} \,} \, \underbrace{CaO}_{p\acute{a}lene \, v\acute{a}pno} + CO_2\]
+    \[\underbrace{CaCO_3}_\text{vápenec} \,\overrightarrow{\, _{800^\circ C} \,} \, \underbrace{CaO}_\text{pálené vápno} + CO_2\]
     \newline
-    \[CaO + 2\WATER \,\to\, \underbrace{Ca \left(OH\right)_2}_{hasen\acute{e}~v\acute{a}pno}\]
+    \[CaO + 2\WATER \,\to\, \underbrace{Ca \left(OH\right)_2}_\text{hašené vápno}\]
     \newline
     \[Ca\left(OH\right)_2 + \underbrace{CO_2 \downarrow}_{ze~vzduchu} ~\to~ CaCO_3 + \WATER\] ...princip tvrdnutí malty
     \newline \newline
