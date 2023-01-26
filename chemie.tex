@@ -6,7 +6,7 @@
 \usepackage[a4paper,margin=2.5cm]{geometry}
 
 \usepackage{graphicx}
-\usepackage{pdflscape, tabularx, ragged2e, float, array, tabto}
+\usepackage{pdflscape, tabularx, ragged2e, float, array, tabto, longtable}
 \TabPositions{0em, 20em}
 \newcolumntype{L}{>{\RaggedRight\arraybackslash}X}
 %\usepackage[colorlinks=true, allcolors=blue]{hyperref}
@@ -227,44 +227,41 @@
 \section{Přehledy}
     \begin{landscape}
     \subsection{Vitaminy}
-        \begin{table}[H]
-            \begin{tabular}{| m{7em} | m{5em} | m{5em} | m{8em}<{\RaggedRight} | m{15em}<{\RaggedRight} | m{15em}<{\RaggedRight} | m{10em}<{\RaggedRight} |}
-                \hline
-                \multicolumn{7}{| c |}{Přehled vitaminů}\\
-                \hline
-                Název & Skupina & Doporučená denní dávka & Zdroj & Význam & Projevy nedostatku & Poznámka \\
-                \hline
-                A (retinol) & tetraterpen & 1.8-2mg & mléčný tuk, vaječný žloutek, játra, rybí tuk i maso, barevná zelenina & zajišťuje vidění, tvoří oční purpur, podílí se na tvoření bílkovin v kůži a ve sliznicích & šeroslepost, rohovatění kůže a sliznic, ucpávání vývodů žláz, postižení skloviny i zuboviny & nebezpečí hypervitaminózy z předávkování - bolest hlavy, koliky, průjmy \\
-                \hline
-                B (thiamin)& heterocykl & 1.5mg & obiloviny(zejména klíčky), kvasnice, játra, vepřové maso & zasahuje především do metabolismu cukrů, zejména v centrálním nervstvu a ve svalech; podporuje činnost trávicího ústrojí & zvýšená únavnost, sklony ke křečím svalstva, srdeční poruchy, trávicí poruchy, dispozice k zánětům nervů až onemocnění beri-beri & \\
-                \hline
-                $B_1$ (riboflavin) & & 1.8mg & mléko, maso, kvasnice & jako účinná složka tzv. žlutého dýchacího fermentu je v každé buňce, kde se účastní oxidace živin & zardělost a palčivost jazyka, zduření rtů, bolavé koutky, poruchy sliznice hltanu a hrtanu & v 1litry mléka je okolo 1mg \\
-                \hline
-                $B_3$ (kys. pantotenová) & deriv. kys. máselné & 7-10mg & játra, kvasnice, hrách, maso, mléko, vejce &&& \\
-                \hline
-                $B_6$ (pyridoxin) & & 2mg & kvasnice, obilné klíčky, mléko, luštěniny &&& \\
-                \hline
-                $B_12$ (kobalamin)& & 0.001mg & játra, maso, činností bakterií vznik ve střevech &&& \\
-                %\endfirsthead
-                \hline
-                Kys. nikotinová & heterocykl &&&&& \\
-                \hline
-                Kys. listová & heterocykl &&&&& \\
-                \hline
-                C (kys. askorbová) & Sacharid deriv. & 50-70mg & syrové ovoce a zelenina & katalyzuje oxidaci živin, udržuje dobrý stav vaziva a chrupavek, podporuje tvorbu protilátek & únava, snížená odolnost proti nakažlivým nemocem, krvácení, vypadávání zubů; při avitaminóze vzniká smrtelné onemocnění kurděje & předávkování C vitaminu může být i zdravý škodlivé \\
-                \hline
-                D (vit. antirachitický) & steroid & 400m.j. & rybí tuk, vzinká po ozáření UV v malém množství i v kůži & podílí se na řízení metabolismu Ca a P v těle & ztrácí-li organismus Ca a P, snaží se jej nahradit z kostí, za vývoje vzniká křivice, v dospělosti měknutí kostí, rachitis & hypervitaminóza D vede k ukládání Ca v ledvinách, srdci, stěnách cév a může ohrozit život \\
-                \hline
-                E (tokoferol) & deriv. tokolu & 5-20mg & obilné klíčky & podporuje činnost pohlavních žláz a správný průběh těhotenství & některé gestační poruchy & \\
-                \hline
-                H (Biotin) & heterocykl & 0.15-0.3mg & kvasnice, játra, ledviny, biosyntéza ve střevech & je ve všech živočišných buňkách, podporuje jejich růst a dělení & záněty kůže, atrofie papil jazyka, unavenost, deprese, svalové bolesti, nechutenství & \\
-                \hline
-                K (vit. antihemoragický) & deriv. naftochinonu & 1mg & listové zeleniny, kvasnice, v tlustém střevě je tvořen činností mikroorganismů & oxidoreduktáza, tvorba protisrážlivé látky protrombinu & krvácení do tkání a tělesných dutin, krvácení do mozku může zapříčinit smrt & \\
-                \hline
-            \end{tabular}
-            \caption{Přehled vitaminů}
-            \label{tab:my_label}
-        \end{table}
+        \begin{longtable}{| m{7em} | m{5em} | m{5em} | m{8em}<{\RaggedRight} | m{15em}<{\RaggedRight} | m{15em}<{\RaggedRight} | m{10em}<{\RaggedRight} |}
+            %\hline
+            %\multicolumn{7}{| c |}{Přehled vitaminů}\\
+            \hline
+            Název & Skupina & Správná denní dávka & Zdroj & Význam & Projevy nedostatku & Poznámka \\
+            \hline
+            A (retinol) & tetraterpen & 1.8-2mg & mléčný tuk, vaječný žloutek, játra, rybí tuk i maso, barevná zelenina & zajišťuje vidění, tvoří oční purpur, podílí se na tvoření bílkovin v kůži a ve sliznicích & šeroslepost, rohovatění kůže a sliznic, ucpávání vývodů žláz, postižení skloviny i zuboviny & nebezpečí hypervitaminózy z předávkování - bolest hlavy, koliky, průjmy \\
+            \hline
+            B (thiamin)& heterocykl & 1.5mg & obiloviny(zejména klíčky), kvasnice, játra, vepřové maso & zasahuje především do metabolismu cukrů, zejména v centrálním nervstvu a ve svalech; podporuje činnost trávicího ústrojí & zvýšená únavnost, sklony ke křečím svalstva, srdeční poruchy, trávicí poruchy, dispozice k zánětům nervů až onemocnění beri-beri & \\
+            \hline
+            $B_1$ (riboflavin) & & 1.8mg & mléko, maso, kvasnice & jako účinná složka tzv. žlutého dýchacího fermentu je v každé buňce, kde se účastní oxidace živin & zardělost a palčivost jazyka, zduření rtů, bolavé koutky, poruchy sliznice hltanu a hrtanu & v 1litry mléka je okolo 1mg \\
+            \hline
+            $B_3$ (kys. pantotenová) & deriv. kys. máselné & 7-10mg & játra, kvasnice, hrách, maso, mléko, vejce & účast v oxidoreduktázách a umožňuje syntézu bílkovin+ jako koenzym A má centrální postavení v metabolizmu & různé degenerace; u člověka pálení chodidel & je ve všech tkáních \\
+            \hline
+            $B_6$ (pyridoxin) & & 2mg & kvasnice, obilné klíčky, mléko, luštěniny & podporuje účinek vitaminů $B_1 ~a~ B_3$ & pomalé hojení zánětů, zhoršení regenerace sliznic & \\
+            \hline
+            $B_{12}$ (kobalamin)& & 0.001mg & játra, maso, činností bakterií vznik ve střevech & nutný pro udržení normální krvetvorby & "zhoubná" chudokrevnost & ke vstřebávání vitaminu $B_{12}$ je nutná přítomnost tzv. vnitřního faktoru \\
+        \endfirsthead
+            \hline
+            Kys. nikotinová & heterocykl & 15-20mg & játra, ledviny, maso, kvasnice, houby & klíčová pro syntézu ribonukleových kyselin a bílkovin & záněty kůže, celková sešlost, poškození mozku& \\
+            \hline
+            Kys. listová & heterocykl & 0.5-1mg & listová zelenina & zasahuje do metabolismu aminokyselin, je nutná pro tvorbu červených krvinek & chudokrevnost & \\
+            \hline
+            C (kys. askorbová) & Sacharid deriv. & 50-70mg & syrové ovoce a zelenina & katalyzuje oxidaci živin, udržuje dobrý stav vaziva a chrupavek, podporuje tvorbu protilátek & únava, snížená odolnost proti nakažlivým nemocem, krvácení, vypadávání zubů; při avitaminóze vzniká smrtelné onemocnění kurděje & předávkování C vitaminu může být i zdravý škodlivé \\
+            \hline
+            D (vit. antirachitický) & steroid & 400m.j. & rybí tuk, vzinká po ozáření UV v malém množství i v kůži & podílí se na řízení metabolismu Ca a P v těle & ztrácí-li organismus Ca a P, snaží se jej nahradit z kostí, za vývoje vzniká křivice, v dospělosti měknutí kostí, rachitis & hypervitaminóza D vede k ukládání Ca v ledvinách, srdci, stěnách cév a může ohrozit život \\
+            \hline
+            E (tokoferol) & deriv. tokolu & 5-20mg & obilné klíčky & podporuje činnost pohlavních žláz a správný průběh těhotenství & některé gestační poruchy & \\
+            \hline
+            H (Biotin) & heterocykl & 0.15-0.3mg & kvasnice, játra, ledviny, biosyntéza ve střevech & je ve všech živočišných buňkách, podporuje jejich růst a dělení & záněty kůže, atrofie papil jazyka, unavenost, deprese, svalové bolesti, nechutenství & \\
+            \hline
+            K (vit. antihemoragický) & deriv. naftochinonu & 1mg & listové zeleniny, kvasnice, v tlustém střevě je tvořen činností mikroorganismů & oxidoreduktáza, tvorba protisrážlivé látky protrombinu & krvácení do tkání a tělesných dutin, krvácení do mozku může zapříčinit smrt & \\
+            \hline
+            %\caption{Přehled vitaminů}
+        \end{longtable}
     \end{landscape}
 
 
