@@ -6,7 +6,7 @@
 \usepackage[a4paper,margin=2.5cm]{geometry}
 
 \usepackage{graphicx}
-\usepackage{amsmath, pdflscape, ragged2e, float, array, tabto, longtable, multicol}
+\usepackage{amsmath, pdflscape, ragged2e, float, array, tabto, longtable, multicol, xcolor}
 \newcolumntype{L}{>{\RaggedRight\arraybackslash}X}
 %\usepackage[colorlinks=true, allcolors=blue]{hyperref}
 \usepackage{hyperref}
@@ -29,12 +29,13 @@
     \maketitle
 
     \begin{abstract}
-        Tato skripta vzinkla jako pouhý přepis zpracovaného materiálu paní učitelky RNDRr. Stanislavy Pojerové. Původní materiál je souborem pro kvintu a sextu víceletého gymnázia a byl zpracován během pandemie Covidu 19 v letech 2020 a 2021.
+        Pouhý přepis zpracovaného materiálu paní učitelky RNDRr. Stanislavy Pojerové. Původní materiál je souborem pro kvintu a sextu víceletého gymnázia a byl zpracován během pandemie Covidu 19 v letech 2020 a 2021.
         
         Skripta v této podobě mají sloužit především studentům plánujícím maturitu z chemie. 
     \end{abstract}
 
     \newpage
+    \renewcommand{\contentsname}{Obsah podle tématu}
     \tableofcontents
     \newpage
     
@@ -118,6 +119,76 @@ Nositel Nobelovy ceny za fyziku 1933
 
 \raggedright
 
+\subsection{Výstavbový princip}
+    \subsubsection{\underline{Znázornění orbitů a elektronů} v nich ($\downarrow \uparrow,~ \uparrow \uparrow,~ \downarrow\downarrow$)}
+    \begin{description}
+        \TabPositions{0em, 12em}
+        \vspace{1em}
+        \item[a)] prostorovým tvarem: \tab s, p, d, f
+        \vspace{2em}
+        \item[b)] psaným symbolem: \tab \(
+            \begin{array}{c}
+                \qquad\qquad\;\; e^-\\
+                \qquad \;\;\; \nearrow \\
+                \;\;3d^7 \\
+                \swarrow~\searrow \\
+                \mbox{n=3} \qquad \mbox{l=2}
+            \end{array}
+        \)
+        \hspace{6em}
+        \(
+            \begin{array}{c}
+                \qquad\qquad\;\; e^-\\
+                \qquad \;\;\; \nearrow \\
+                \;\;4p^5 \\
+                \swarrow~\searrow \\
+                \mbox{n=4} \qquad \mbox{l=1}
+            \end{array}
+        \)
+        \vspace{2em}
+        \item[c)] rámečky: \tab  : 3 \fbox{$\downarrow\uparrow$}\fbox{$\downarrow\uparrow$}\fbox{$\downarrow$ }\fbox{$\downarrow$ }\fbox{$\downarrow$ } \hspace{3em} 4 \fbox{$\downarrow\uparrow$}\fbox{$\downarrow\uparrow$}\fbox{$\downarrow$ }
+    \end{description}
+    
+    \newpage
+    \addcontentsline{toc}{subsubsection}{Příklad}
+    Příklad: Urči maximální počet $e^-$ ve slupce \textbf{N}
+
+    \smallskip
+    \TabPositions{0em, 7em}
+    N $\Rightarrow$ n=4 $\Rightarrow$\tab 0(s) $\Rightarrow$ m=0 (1 orbit)
+
+        \tab 1(p) $\Rightarrow$ m=-1,0,1 (3 orbity)
+    
+        \tab 2(d) $\Rightarrow$ m=-2,-1,0,1,2 (5 orbity)
+    
+        \tab 3(f) $\Rightarrow$ m=-3,-2,-1,0,1,2,3 (7 orbity)
+
+    \medskip
+    Dohromady 16 orbitů * 2$e^-$ \textbf{= 32$e^-$}
+
+    ...jelikož v každém orbitu mohou být 2 elektrony s opačným spinem (tzv. Pauliho vylučovací princip)
+
+    \bigskip
+    \fbox{\;\;} \underline{prázdný orbit = vakantní}
+
+    \subsubsection{Pravidla zaplňování orbitů}
+    \begin{enumerate}
+        \item Pauliho vylučovací princip
+        \item Hundovo pravidlo: Nejprve se zaplňují orbity jedním $e^- \; \Rightarrow$ nespárované $e^-$ mají stejný spin
+        
+        Příklad: $3d^7$: 3 \fbox{$\downarrow\textcolor{magenta}{\uparrow}$}\fbox{$\downarrow\textcolor{magenta}{\uparrow}$}\fbox{$\downarrow\textcolor{magenta}{.}$}\fbox{$\downarrow\textcolor{magenta}{.}$}\fbox{$\downarrow\textcolor{magenta}{.}$}
+        
+        Jedná se o tzv. \underline{DEGENEROVANÉ} orbity (mají stejné \underline{n} a \underline{l}, liší se v m) $\Rightarrow$
+        
+        $\Rightarrow$ orbity \textbf{s} nesjou degenerované, orbity \textbf{p} jsou 3x degenerované, orbity \textbf{d} 5x, \textbf{f} 7x
+        \item Výstavbový princip: nejprve se zaplňují orbity s nízkou energií $\doteq$ v tomto pořadí:
+        
+        1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p, 5s, 4d, 5p, 6s, 5d, 4f, 6p, 7s, 6d \dots
+        \item Pravidlo \textbf{n+l}: Když je součet n+l stejný, zaplňují se provně orbity s nižší hodnotou \underline{n}.
+    \end{enumerate}
+
+    \subsubsection{Elektronové konfigurace podle výstavbového principu}
+    $\underline{\underline{_{13}}}Al$: $1s^2$, $2s^2$, $2p^6$, $3s^2$, $3p^1$ (součet $e^- = \underline{\underline{13}}$)
 \newpage
 \TabPositions{0em, 20em}
 \section{Prvky}
