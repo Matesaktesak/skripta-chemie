@@ -12,10 +12,10 @@ Nositel Nobelovy ceny za fyziku 1933
 \TabPositions{0em, 12em, 25em}
 \subsection{Kvantová čísla}
 \begin{description}
-    \item[hlavní \textbf{n}] \tab 1-$\infty$(zatím 7) \tab udává \underline{energii} orbitu
-    \item[vedlejší \textbf{l}] \tab 0-(n-1) \tab udává \underline{tvar} orbitu
+    \item[hlavní \textbf{n}] \tab 1 až $\infty$(zatím 7) \tab udává \underline{energii} orbitu
+    \item[vedlejší \textbf{l}] \tab 0 až (n-1) \tab udává \underline{tvar} orbitu
     \item[magnetické \textbf{m}] \tab -l...0...+l \tab udává \underline{počet orbitalů} a jejich orientaci
-    \item[spinové \textbf{s}] \tab $-\frac{1}{2}$ - $\frac{1}{2}$ \tab udává \underline{spin} $e^-$
+    \item[spinové \textbf{s}] \tab $-\frac{1}{2}$ nebo $\frac{1}{2}$ \tab udává \underline{spin} $e^-$
 \end{description}
 
 \centering
@@ -61,7 +61,7 @@ $l = 1 \to $ tvar orbitu \textbf{p}: "ležatá osmička" \tab \hspace{2em} \huge
 
 \normalsize
 
-$l = 2 \to $ tvar orbitu \textbf{d}: "čtyřlístek"
+$l = 2 \to $ tvar orbitu \textbf{d}: "čtyřlístek" %TODO: Přidat obrázek
 
 \vspace{2em}
 
@@ -81,7 +81,7 @@ $l = 3 \to $ tvar orbitu \textbf{f}: "velmi složitý tvar"
         \begin{array}{c}
             \qquad\qquad\;\; e^-\\
             \qquad \;\;\; \nearrow \\
-            \;\;3d^7 \\
+            \;\;\textbf{3d^7} \\
             \swarrow~\searrow \\
             \mbox{n=3} \qquad \mbox{l=2}
         \end{array}
@@ -91,7 +91,7 @@ $l = 3 \to $ tvar orbitu \textbf{f}: "velmi složitý tvar"
         \begin{array}{c}
             \qquad\qquad\;\; e^-\\
             \qquad \;\;\; \nearrow \\
-            \;\;4p^5 \\
+            \;\;\textbf{4p^5} \\
             \swarrow~\searrow \\
             \mbox{n=4} \qquad \mbox{l=1}
         \end{array}
@@ -101,8 +101,8 @@ $l = 3 \to $ tvar orbitu \textbf{f}: "velmi složitý tvar"
 \end{description}
 
 \newpage
-\addcontentsline{toc}{subsubsection}{Příklad}
-Příklad: Urči maximální počet $e^-$ ve slupce \textbf{N}
+\subsubsection*{\textbf{Příklad:}}
+Urči maximální počet $e^-$ ve slupce \textbf{N}
 
 \smallskip
 \TabPositions{0em, 7em}
@@ -117,14 +117,14 @@ N $\Rightarrow$ n=4 $\Rightarrow$\tab 0(s) $\Rightarrow$ m=0 (1 orbit)
 \medskip
 Dohromady 16 orbitů * 2$e^-$ \textbf{= 32$e^-$}
 
-...jelikož v každém orbitu mohou být 2 elektrony s opačným spinem (tzv. Pauliho vylučovací princip)
+...jelikož v každém orbitu mohou být 2 elektrony s opačným spinem (tzv. \textbf{Pauliho vylučovací princip})
 
 \bigskip
 \fbox{\phantom{$\uparrow$ }} \underline{prázdný orbit = vakantní}
 
 \subsubsection{Pravidla zaplňování orbitů}
 \begin{enumerate}
-    \item Pauliho vylučovací princip
+    \item Pauliho vylučovací princip = jeden orbit zaplňují max. $2e^-$ \textbf{s opačným  spinem} 
     \item Hundovo pravidlo: Nejprve se zaplňují orbity jedním $e^- \; \Rightarrow$ nespárované $e^-$ mají stejný spin
     
     Příklad: $3d^7$: 3 \fbox{$\downarrow\textcolor{magenta}{\uparrow}$}\fbox{$\downarrow\textcolor{magenta}{\uparrow}$}\fbox{$\downarrow\textcolor{magenta}{.}$}\fbox{$\downarrow\textcolor{magenta}{.}$}\fbox{$\downarrow\textcolor{magenta}{.}$}
@@ -153,10 +153,11 @@ $\underline{\underline{_{26}}}Fe^-$: $1s^2$, $2s^2$, $2p^6$, $3s^2$, $3p^6$, $4s
 Vždy se začíná orbitem \textbf{s} a pak další v pořadí \hyperlink{vystavbovyprincip}{výstavbového principu}
 
 \vspace{2em}
-$\underbrace{_{35}Br\left[_{18}Ar\right]}_{35 - 18 = 17e^-}$ : $4s^2, 3d^{10}, 4p^5$
-
-\vspace{2em}
-$\underbrace{_{53}I\left[_{36}Kr\right]}_{57 - 36 = 17e^-}$ : $5s^2, 4d^{10}, 5p^5$
+\begin{multicols}{2}
+    $\underbrace{_{35}Br\left[_{18}Ar\right]}_{35 - 18 = 17e^-}$ : $4s^2, 3d^{10}, 4p^5$
+    
+    $\underbrace{_{53}I\left[_{36}Kr\right]}_{57 - 36 = 17e^-}$ : $5s^2, 4d^{10}, 5p^5$
+\end{multicols}
 
 \subsubsection{Elektronové konfigurace podle valenčních elektronů}
 Valenční vrstva(svéra, též hladina) je poslední od jádra pro daný atom
